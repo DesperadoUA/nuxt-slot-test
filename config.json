@@ -1,0 +1,22 @@
+{
+    "pages": {
+        "main": "main",
+        "reviews": "reviews",
+        "bonuses": "bonuses",
+        "blog": "blog",
+        "news": "news",
+        "interview": "interview",
+        "useful": "useful"
+    },
+    "category": {
+        "popularCasino": "popular-casino",
+        "licensedCasino": "licensed-casino",
+        "minDepositCasino": "min-deposit-casino",
+        "freeBonusCasino": "free-bonus-casino",
+        "newSlots": "new-slots",
+        "bestForPayout": "best-for-payout",
+        "bonusPay": "bonus-pay",
+        "progressive": "progressive",
+        "megaways": "megaways"
+    }
+}

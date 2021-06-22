@@ -1,0 +1,101 @@
+{
+    "popularCasino": {
+         "title": "string",
+         "short_desc": "string", 
+         "h1": "string",
+         "meta_title": "string",
+         "description": "string",
+         "keywords": "string",
+         "content": "string",
+         "category_link": "object",
+         "casino": "object"
+        },
+    "licensedCasino": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "casino": "object"
+    },
+    "minDepositCasino": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "casino": "object"
+    },
+    "freeBonusCasino": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "casino": "object"
+    },
+    "newSlots": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "slots": "object"
+    },
+    "bestPayout": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "slots": "object"
+    },
+    "bonusPay": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "slots": "object"
+    },
+    "progressive": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "slots": "object"
+    },
+    "megaways":  {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "category_link": "object",
+        "slots": "object"
+    }
+}

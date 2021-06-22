@@ -1,0 +1,82 @@
+{
+    "main": {
+         "title": "string",
+         "short_desc": "string", 
+         "h1": "string",
+         "meta_title": "string",
+         "description": "string",
+         "keywords": "string",
+         "content": "string",
+         "category_link": "object",
+         "bonuses": "object",
+         "popular_bonus": "object",
+         "casino": "object",
+         "popular_slots": "object",
+         "new_casino": "object"
+        },
+    "reviews": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "top_rating_casino": "object",
+        "new_casino": "object",
+        "popular_casino": "object"
+    },
+    "bonuses": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "bonuses": "object",
+        "list": "object"
+    },
+    "blog": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "blog": "object"
+    },
+    "news": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "news": "object"
+    },
+    "interview": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "news": "object"
+    },
+    "useful": {
+        "title": "string",
+        "short_desc": "string", 
+        "h1": "string",
+        "meta_title": "string",
+        "description": "string",
+        "keywords": "string",
+        "content": "string",
+        "news": "object",
+        "interview": "object",
+        "blog": "object"
+    }
+}
