@@ -1,0 +1,19 @@
+{
+    "title": "string",
+    "status": "string",
+    "create_at": "string",
+    "update_at": "string",
+    "slug": "string",
+    "content": "string",
+    "description": "string",
+    "h1": "string",
+    "keywords": "string",
+    "meta_title": "string",
+    "short_desc": "string",
+    "thumbnail": "string",
+    "permalink": "string",
+    "icon": "string",
+    "post_type": "string",
+    "casino": "object",
+    "slots": "object"
+}
