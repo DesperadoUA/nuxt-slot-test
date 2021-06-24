@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {InterviewController} from '../api/controller/interview.controller'
 
-const post = new InterviewController()
+const post = new InterviewController('interview')
 
 describe('Interview', function() {
     it('All interview', async function () {

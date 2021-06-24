@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {VendorController} from '../api/controller/vendor.controller'
 
-const post = new VendorController()
+const post = new VendorController('vendors')
 
 describe('Vendor', function() {
     it('All vendor', async function () {

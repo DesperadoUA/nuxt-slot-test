@@ -2,7 +2,7 @@ import {strict as assert} from 'assert'
 import {PageController} from '../api/controller/page.controller'
 const config = require('./../config.json')
 
-const page = new PageController()
+const page = new PageController('pages')
 
 describe('Pages', function(){
     it('Main page', async function () {

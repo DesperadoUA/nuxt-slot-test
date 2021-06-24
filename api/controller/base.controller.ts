@@ -1,4 +1,24 @@
+import {JsonRequest} from './request'
 export class BaseController {
+    postType: string
+    constructor(postType: string) {
+        this.postType = postType
+    }
+    async getByUrl(id: string) {
+        const response = await new JsonRequest()
+                                   .postType(this.postType)
+                                   .url(id)
+                                   .send()
+        return JSON.parse(response.body)
+    } 
+    async getAll(query: any){
+        const response = await new JsonRequest()
+                                   .postType(this.postType)
+                                   .url('')
+                                   .searchParams(query)
+                                   .send()
+        return JSON.parse(response.body)
+    }
     public checkKeyShema(shema:any, body:any) {
         for (let key in shema) {
             if(!(key in body)) {

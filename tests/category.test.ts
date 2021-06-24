@@ -2,7 +2,7 @@ import {strict as assert} from 'assert'
 import {CategoryController} from '../api/controller/category.controller'
 const config = require('./../config.json')
 
-const category = new CategoryController()
+const category = new CategoryController('category')
 
 describe('Category', function(){
     it('Popular category', async function () {

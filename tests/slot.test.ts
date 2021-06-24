@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {SlotController} from '../api/controller/slot.controller'
 
-const post = new SlotController()
+const post = new SlotController('slots')
 
 describe('Slot', function() {
     it('All slots', async function () {

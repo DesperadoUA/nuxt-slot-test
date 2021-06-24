@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {NewsController} from '../api/controller/news.controller'
 
-const post = new NewsController()
+const post = new NewsController('news')
 
 describe('News', function() {
     it('All news', async function () {

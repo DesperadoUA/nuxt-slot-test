@@ -1,16 +1,8 @@
-import {JsonRequest} from './request'
 import { BaseController } from './base.controller'
 const shema = require('./../shema/pages.json')
 const config = require('../../config.json')
 
 export class PageController extends BaseController {
-    async getByUrl(id: string) {
-        const response = await new JsonRequest()
-                                   .postType('pages')
-                                   .url(id)
-                                   .send()
-        return JSON.parse(response.body)
-    }
     checkKey(page: string, data: object) {
         switch(page){
             case config.pages.main: return this.mainPageKeys(data)

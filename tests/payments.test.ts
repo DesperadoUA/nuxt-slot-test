@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {PaymentController} from '../api/controller/payment.controller'
 
-const post = new PaymentController()
+const post = new PaymentController('payments')
 
 describe('Payment', function() {
     it('All payments', async function () {

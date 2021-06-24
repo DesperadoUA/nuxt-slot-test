@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {BlogController} from '../api/controller/blog.controller'
 
-const post = new BlogController()
+const post = new BlogController('blog')
 
 describe('Blog', function() {
     it('All blog', async function () {

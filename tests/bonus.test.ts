@@ -1,7 +1,7 @@
 import {strict as assert} from 'assert'
 import {BonusController} from '../api/controller/bonus.controller'
 
-const post = new BonusController()
+const post = new BonusController('bonuses')
 
 describe('Bonus', function() {
     it('All bonus', async function () {
