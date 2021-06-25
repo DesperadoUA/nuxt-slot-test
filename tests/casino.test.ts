@@ -1,10 +1,10 @@
 import {strict as assert} from 'assert'
 import {CasinoController} from '../api/controller/casino.controller'
+const POST_TYPE = 'casino'
+const post = new CasinoController(POST_TYPE)
 
-const post = new CasinoController('casino')
-
-describe('Casino', function() {
-    it('All casino', async function () {
+describe(POST_TYPE, function() {
+    it('All ' + POST_TYPE, async function () {
         const limit = 10
         let offset = 0
         const posts = await post.getAll({limit, offset})
@@ -20,6 +20,7 @@ describe('Casino', function() {
                console.log(item.permalink)
                assert(post.checkKey(currentPost.body), 'Check key casino') 
                assert(post.checkMeta(currentPost.body), 'Check meta casino')
+               assert(post.checkRequiredKey(currentPost.body), 'Check required key ' + POST_TYPE)
             }
         }
        
