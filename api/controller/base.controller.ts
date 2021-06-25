@@ -1,4 +1,4 @@
-import {JsonRequest} from './request'
+import {JsonRequest} from '../DAL/request'
 export class BaseController {
     postType: string
     constructor(postType: string) {
@@ -38,5 +38,34 @@ export class BaseController {
         if(data.meta_title === "") return false
         if(data.description === "") return false
         return true
+    }
+    public checkEmptyKey(key:string, data:any) {
+        let result = false
+        if(key in data) {
+            const type = typeof data[key]
+            switch(type) {
+                case 'number': {
+                    if(data[key] === 0) result = true
+                    break
+                }
+                case 'string': {
+                    if(data[key] === '') result = true
+                    break
+                }
+                case 'object': {
+                    if(Array.isArray(data[key])) {
+                        if(data[key].length === 0) result = true 
+                    } 
+                    break
+                }
+            }
+        } else {
+            result = true
+        }
+        if(result) {
+            console.log(`Error key ${key}`)
+            return result
+        }
+        return result
     }
 }
