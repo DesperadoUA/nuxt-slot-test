@@ -1,10 +1,10 @@
 import {strict as assert} from 'assert'
 import {NewsController} from '../api/controller/news.controller'
+const POST_TYPE = 'news'
+const post = new NewsController(POST_TYPE)
 
-const post = new NewsController('news')
-
-describe('News', function() {
-    it('All news', async function () {
+describe(POST_TYPE, function() {
+    it('All ' + POST_TYPE, async function () {
         const limit = 10
         let offset = 0
         const posts = await post.getAll({limit, offset})
@@ -18,8 +18,9 @@ describe('News', function() {
             for(let item of posts.body.posts) {
                const currentPost = await post.getByUrl(item.permalink) 
                console.log(item.permalink)
-               assert(post.checkKey(currentPost.body), 'Check key news') 
-               assert(post.checkMeta(currentPost.body), 'Check meta news')
+               assert(post.checkKey(currentPost.body), 'Check key ' + POST_TYPE) 
+               assert(post.checkMeta(currentPost.body), 'Check meta ' + POST_TYPE)
+               assert(post.checkRequiredKey(currentPost.body), 'Check required key ' + POST_TYPE)
             }
         }
        
