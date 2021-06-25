@@ -18,6 +18,7 @@ export class CasinoController extends BaseController {
             console.log('Key post_type')
             return false
         }  
+        if(this.checkEmptyKey('thumbnail', data)) return false
         if(this.checkEmptyKey('icon', data)) return false
         if(this.checkEmptyKey('bonus', data)) return false
         if(this.checkEmptyKey('bonus_wagering', data)) return false

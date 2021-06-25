@@ -1,10 +1,10 @@
 import {strict as assert} from 'assert'
 import {InterviewController} from '../api/controller/interview.controller'
+const POST_TYPE = 'interview'
+const post = new InterviewController(POST_TYPE)
 
-const post = new InterviewController('interview')
-
-describe('Interview', function() {
-    it('All interview', async function () {
+describe(POST_TYPE, function() {
+    it('All ' + POST_TYPE, async function () {
         const limit = 10
         let offset = 0
         const posts = await post.getAll({limit, offset})
@@ -18,8 +18,9 @@ describe('Interview', function() {
             for(let item of posts.body.posts) {
                const currentPost = await post.getByUrl(item.permalink) 
                console.log(item.permalink)
-               assert(post.checkKey(currentPost.body), 'Check key interview') 
-               assert(post.checkMeta(currentPost.body), 'Check meta interview')
+               assert(post.checkKey(currentPost.body), 'Check key ' + POST_TYPE) 
+               assert(post.checkMeta(currentPost.body), 'Check meta ' + POST_TYPE)
+               assert(post.checkRequiredKey(currentPost.body), 'Check required key ' + POST_TYPE)
             }
         }
        
