@@ -1,10 +1,10 @@
 import {strict as assert} from 'assert'
 import {VendorController} from '../api/controller/vendor.controller'
+const POST_TYPE = 'vendors'
+const post = new VendorController(POST_TYPE)
 
-const post = new VendorController('vendors')
-
-describe('Vendor', function() {
-    it('All vendor', async function () {
+describe(POST_TYPE, function() {
+    it('All ' + POST_TYPE, async function () {
         const limit = 10
         let offset = 0
         const posts = await post.getAll({limit, offset})
@@ -18,8 +18,9 @@ describe('Vendor', function() {
             for(let item of posts.body.posts) {
                const currentPost = await post.getByUrl(item.permalink) 
                console.log(item.permalink)
-               assert(post.checkKey(currentPost.body), 'Check key vendor') 
-               assert(post.checkMeta(currentPost.body), 'Check meta vendor')
+               assert(post.checkKey(currentPost.body), 'Check key ' + POST_TYPE) 
+               assert(post.checkMeta(currentPost.body), 'Check meta ' + POST_TYPE)
+               assert(post.checkRequiredKey(currentPost.body), 'Check required key ' + POST_TYPE)
             }
         }
        
